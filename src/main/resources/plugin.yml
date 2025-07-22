@@ -1,0 +1,25 @@
+name: SkyblockLotteryReborn
+version: '${version}'
+main: me.devupdates.skyblockLottery.SkyblockLottery
+api-version: '1.21'
+description: A modern lottery plugin for Skyblock servers using Cobblestone currency
+
+commands:
+  lottery:
+    description: Main lottery command
+    aliases: [lot]
+    usage: /lottery <start|buy|claim|reload|info>
+
+permissions:
+  lottery.buy:
+    description: Buy lottery tickets
+    default: true
+  lottery.start:
+    description: Start lottery manually
+    default: op
+  lottery.claim:
+    description: Claim lottery winnings
+    default: true
+  lottery.reload:
+    description: Reload plugin configuration
+    default: op

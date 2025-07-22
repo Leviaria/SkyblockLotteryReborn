@@ -1,0 +1,31 @@
+# ===============================================
+# SkyblockLottery Reborn - Messages File
+# ===============================================
+# Use & for color codes
+# Available placeholders:
+# {prefix} - Plugin prefix (configured in config.yml)
+# {player} - Player name
+# {amount} - Amount/number value
+# {total} - Total tickets
+# {winner} - Winner name
+# {material} - Material name
+
+# Lottery Messages
+lottery:
+  started: "{prefix} &eA new lottery has started! Buy tickets with /lottery buy <amount>"
+  ended: "{prefix} &eLottery ended! Winner: &b{winner} &ewith &a{amount}x {material}"
+  ticket-bought: "{prefix} &eTicket purchased! You now have &b{total} &etickets (&a+{amount}&e)"
+  not-enough-currency: "{prefix} &cYou don't have enough Cobblestone!"
+  max-tickets: "{prefix} &cYou have already reached the maximum number of tickets!"
+  no-active: "{prefix} &cThere is currently no active lottery."
+  claim-success: "{prefix} &ePrize claimed: &a{amount}x {material}"
+  no-winnings: "{prefix} &cYou have no winnings to claim."
+  inventory-full: "{prefix} &cYour inventory is full! Winnings have been dropped on the ground."
+  force-started: "{prefix} &eLottery has been manually started!"
+
+# Command Messages
+commands:
+  usage: "{prefix} &cUsage: /lottery <start|buy|claim|reload|info>"
+  no-permission: "{prefix} &cYou don't have permission for this command!"
+  reload-success: "{prefix} &eConfiguration successfully reloaded!"
+  invalid-amount: "{prefix} &cInvalid amount! Use a number between 1 and 64." 

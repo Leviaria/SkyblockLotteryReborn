@@ -1,0 +1,36 @@
+# ===============================================
+# SkyblockLottery Reborn - Configuration File
+# ===============================================
+
+# General Settings
+general:
+  # Prefix for all plugin messages
+  prefix: "&8[&eSkyblockLottery-Reborn&8]"
+
+# Lottery Settings
+lottery:
+  # Auto-start lottery every X minutes (20 = 20 minutes)
+  interval-minutes: 20
+  
+  # Maximum tickets a player can buy per lottery
+  max-tickets-per-player: 128
+  
+  # Currency settings (when economy is disabled)
+  currency:
+    material: "COBBLESTONE"  # Material players need to pay with
+    amount: 1                 # Amount of material per ticket
+  
+  # Economy settings (requires Vault plugin)
+  economy:
+    enabled: false           # Set to true to use economy instead of items
+    cost: 10.0              # Cost per ticket in economy currency
+  
+  # Reward settings
+  rewards:
+    min-amount: 64          # Minimum reward amount
+    max-amount: 512         # Maximum reward amount
+    material: "COBBLESTONE" # Material to give as reward
+  
+  # Auto-start settings
+  auto-start:
+    enabled: true           # Auto-start lottery after interval 
